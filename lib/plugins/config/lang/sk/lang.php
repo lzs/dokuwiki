@@ -3,6 +3,7 @@
 /**
  * @license    GPL 2 (http://www.gnu.org/licenses/gpl.html)
  *
+ * @author Tibor Repček <tiborepcek@gmail.com>
  * @author Martin Michalek <michalek.dev@gmail.com>
  * @author Michal Mesko <michal.mesko@gmail.com>
  * @author exusik <exusik@gmail.com>
@@ -148,12 +149,6 @@ $lang['proxy____user']         = 'Proxy server - používateľské meno';
 $lang['proxy____pass']         = 'Proxy server - heslo';
 $lang['proxy____ssl']          = 'Proxy server - použiť SSL';
 $lang['proxy____except']       = 'Regulárny výraz popisujúci URL odkazy, pre ktoré by proxy nemala byť použitá.';
-$lang['safemodehack']          = 'Povoliť "safemode hack"';
-$lang['ftp____host']           = 'FTP server pre "safemode hack"';
-$lang['ftp____port']           = 'FTP port pre "safemode hack"';
-$lang['ftp____user']           = 'FTP používateľ pre "safemode hack"';
-$lang['ftp____pass']           = 'FTP heslo pre "safemode hack"';
-$lang['ftp____root']           = 'FTP hlavný adresár pre "safemode hack"';
 $lang['license_o_']            = 'žiadna';
 $lang['typography_o_0']        = 'žiadne';
 $lang['typography_o_1']        = 'okrem jednoduchých úvodzoviek';
