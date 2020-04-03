@@ -3,7 +3,8 @@
 /**
  * @license    GPL 2 (http://www.gnu.org/licenses/gpl.html)
  *
- * @author Schplurtz le Déboulonné <schplurtz@laposte.net>
+ * @author Schplurtz le Déboulonné <Schplurtz@laposte.net>
+ * @author PaliPalo <palipalo@hotmail.fr>
  * @author Laurent Ponthieu <contact@coopindus.fr>
  * @author Damien Regad <dregad@mantisbt.org>
  * @author Michael Bohn <mjbohn@gmail.com>
@@ -183,7 +184,7 @@ $lang['resendpwd']             = 'Définir un nouveau mot de passe pour';
 $lang['resendpwdmissing']      = 'Désolé, vous devez remplir tous les champs.';
 $lang['resendpwdnouser']       = 'Désolé, cet utilisateur n\'existe pas dans notre base de données.';
 $lang['resendpwdbadauth']      = 'Désolé, ce code d\'authentification est invalide. Assurez-vous d\'avoir utilisé le lien de confirmation intégral.';
-$lang['resendpwdconfirm']      = 'Un lien de confirmation vous a été expédié par courriel.';
+$lang['resendpwdconfirm']      = 'Un lien de confirmation a été expédié par courriel.';
 $lang['resendpwdsuccess']      = 'Votre nouveau mot de passe vous a été expédié par courriel.';
 $lang['license']               = 'Sauf mention contraire, le contenu de ce wiki est placé sous les termes de la licence suivante :';
 $lang['licenseok']             = 'Note : En modifiant cette page, vous acceptez que le contenu soit placé sous les termes de la licence suivante :';
@@ -201,7 +202,7 @@ $lang['mediaselect']           = 'Sélection de fichiers';
 $lang['uploadsucc']            = 'Envoi réussi';
 $lang['uploadfail']            = 'L\'envoi a échoué. Les autorisations sont-elles correctes ?';
 $lang['uploadwrong']           = 'Envoi refusé. Cette extension de fichier est interdite !';
-$lang['uploadexist']           = 'Le fichier existe déjà. L\'envoi a été annulé.';
+$lang['uploadexist']           = 'Le fichier existe déjà. L\'envoi est ignoré.';
 $lang['uploadbadcontent']      = 'Le contenu envoyé ne correspond pas à l\'extension du fichier (%s).';
 $lang['uploadspam']            = 'L\'envoi a été bloqué par la liste noire de l\'anti-spam.';
 $lang['uploadxss']             = 'L\'envoi a été bloqué car son contenu est peut-être malveillant.';
@@ -240,7 +241,7 @@ $lang['line']                  = 'Ligne';
 $lang['breadcrumb']            = 'Piste:';
 $lang['youarehere']            = 'Vous êtes ici:';
 $lang['lastmod']               = 'Dernière modification:';
-$lang['by']                    = 'par';
+$lang['by']                    = 'de';
 $lang['deleted']               = 'supprimée';
 $lang['created']               = 'créée';
 $lang['restored']              = 'ancienne révision (%s) restaurée';
@@ -303,10 +304,10 @@ $lang['img_camera']            = 'Appareil photo:';
 $lang['img_keywords']          = 'Mots-clés:';
 $lang['img_width']             = 'Largeur:';
 $lang['img_height']            = 'Hauteur:';
-$lang['subscr_subscribe_success'] = '%s a été ajouté à la liste des abonnés de %s';
+$lang['subscr_subscribe_success'] = '%s a été ajouté à la liste des abonnés à %s';
 $lang['subscr_subscribe_error'] = 'Erreur à l\'ajout de %s à la liste des abonnés de %s';
 $lang['subscr_subscribe_noaddress'] = 'Il n\'y a pas d\'adresse associée à votre identifiant, vous ne pouvez pas être ajouté à la liste des abonnés.';
-$lang['subscr_unsubscribe_success'] = '%s a été supprimé de la liste des abonnés de %s';
+$lang['subscr_unsubscribe_success'] = '%s a été supprimé de la liste des abonnés à %s';
 $lang['subscr_unsubscribe_error'] = 'Erreur au retrait de %s de la liste des abonnés de %s';
 $lang['subscr_already_subscribed'] = '%s est déjà abonné à %s';
 $lang['subscr_not_subscribed'] = '%s n\'est pas abonné à %s';
@@ -330,6 +331,7 @@ $lang['i_modified']            = 'Pour des raisons de sécurité, ce script ne f
 $lang['i_funcna']              = 'La fonction PHP <code>%s</code> n\'est pas disponible. Peut-être que votre hébergeur web l\'a désactivée ?';
 $lang['i_phpver']              = 'Votre version de PHP (%s) est antérieure à la version requise (%s). Vous devez mettre à jour votre installation de PHP.';
 $lang['i_mbfuncoverload']      = 'Il faut désactiver mbstring.func_overload dans php.ini pour DokuWiki';
+$lang['i_urandom']             = 'DokuWiki ne peut créer de nombres cryptographiquement sûrs pour les cookies. Vous voudrez peut-être vérifier que le réglage open_basedir dans php.ini permet l\'accès à <code>/dev/urandom</code>.';
 $lang['i_permfail']            = '<code>%s</code> n\'est pas accessible en écriture pour DokuWiki. Vous devez corriger les autorisations de ce répertoire !';
 $lang['i_confexists']          = '<code>%s</code> existe déjà';
 $lang['i_writeerr']            = 'Impossible de créer <code>%s</code>. Vous devez vérifier les autorisations des répertoires/fichiers et créer le fichier manuellement.';
@@ -386,5 +388,5 @@ $lang['plainhtml']             = 'HTML brut';
 $lang['wikimarkup']            = 'Wiki balise';
 $lang['page_nonexist_rev']     = 'La page n\'existait pas le %s. Elle a été créée le <a href="%s">%s</a>.';
 $lang['unable_to_parse_date']  = 'Ne peut analyser le paramètre date "%s".';
-$lang['email_signature_text']  = 'Ce courriel a été généré par DokuWiki depuis
+$lang['email_signature_text']  = 'Courriel envoyé par DokuWiki depuis
 @DOKUWIKIURL@';

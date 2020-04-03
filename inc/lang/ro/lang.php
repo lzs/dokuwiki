@@ -3,6 +3,8 @@
 /**
  * @license    GPL 2 (http://www.gnu.org/licenses/gpl.html)
  *
+ * @author Vitalie Ciubotaru <vitalie@ciubotaru.tokyo>
+ * @author Victor <kvp@live.com>
  * @author Marian Banica <open@banica.eu.org>
  * @author Tiberiu Micu <tibimicu@gmx.net>
  * @author Sergiu Baltariu <s_baltariu@yahoo.com>
@@ -116,12 +118,18 @@ $lang['js']['media_overwrt']   = 'Suprascrie fișierele deja existente';
 $lang['search_starts_with']    = 'Începe cu';
 $lang['search_ends_with']      = 'Termină cu';
 $lang['search_contains']       = 'Conţine';
+$lang['search_any_ns']         = 'Orice spațiu de nume';
 $lang['search_any_time']       = 'Oricând';
+$lang['search_past_7_days']    = 'Săptămâna trecută';
+$lang['search_past_month']     = 'Luna trecută';
+$lang['search_past_year']      = 'Anul trecut';
+$lang['search_sort_by_hits']   = 'Sortează după popularitate';
+$lang['search_sort_by_mtime']  = 'Sortează după ultima modificare';
 $lang['regmissing']            = 'Ne pare rău, trebuie să completezi toate cîmpurile.';
 $lang['reguexists']            = 'Ne pare rău, un utilizator cu acest nume este deja autentificat.';
 $lang['regsuccess']            = 'Utilizatorul a fost creat. Parola a fost trimisă prin e-mail.';
 $lang['regsuccess2']           = 'Utilizatorul a fost creat.';
-$lang['regfail']               = 'Utilizatorul nu a putu fi creat.';
+$lang['regfail']               = 'Utilizatorul nu a putut fi creat.';
 $lang['regmailfail']           = 'Se pare că a fost o eroare la trimiterea parolei prin e-mail. Contactează administratorul!';
 $lang['regbadmail']            = 'Adresa de e-mail este nevalidă - dacă ești de părere că este o eroare contactează administratorul.';
 $lang['regbadpass']            = 'Cele două parole furnizate nu sunt identice; încearcă din nou.';
@@ -135,6 +143,7 @@ $lang['profnodelete']          = 'Acest wiki nu accepta stergerea conturilor uti
 $lang['profdeleteuser']        = 'Sterge cont';
 $lang['profdeleted']           = 'Contul tau a fost sters de pe acest wiki';
 $lang['profconfdelete']        = 'As dori sa sterf contul meu de pe acest Wiki. <br/> Aceasta actiune nu poate fi anulata.';
+$lang['profconfdeletemissing'] = 'Căsuța de confirmare nu este bifată';
 $lang['proffail']              = 'Profilul utilizatorului nu a fost actualizat.';
 $lang['pwdforget']             = 'Parolă uitată? Obține una nouă!';
 $lang['resendna']              = 'Acest wiki nu permite retrimiterea parolei.';
@@ -335,6 +344,7 @@ $lang['media_perm_read']       = 'Ne pare rău, dar nu ai suficiente permisiuni 
 $lang['media_perm_upload']     = 'Ne pare rău, dar nu ai suficiente permisiuni pentru a putea încărca fișiere.';
 $lang['media_update']          = 'Încarcă noua versiune';
 $lang['media_restore']         = 'Restaurează această versiune';
+$lang['currentns']             = 'Spațiul de nume curent';
 $lang['searchresult']          = 'Rezultatul cautarii';
 $lang['email_signature_text']  = 'Acest e-mail a fost generat de DokuWiki la
 @DOKUWIKIURL@';

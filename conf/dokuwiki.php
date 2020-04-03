@@ -55,7 +55,7 @@ $conf['hidepages']   = '';                //Regexp for pages to be skipped from 
 $conf['useacl']      = 0;                //Use Access Control Lists to restrict access?
 $conf['autopasswd']  = 1;                //autogenerate passwords and email them to user
 $conf['authtype']    = 'authplain';      //which authentication backend should be used
-$conf['passcrypt']   = 'smd5';           //Used crypt method (smd5,md5,sha1,ssha,crypt,mysql,my411)
+$conf['passcrypt']   = 'bcrypt';           //Used crypt method (smd5,md5,sha1,ssha,crypt,mysql,my411,bcrypt)
 $conf['defaultgroup']= 'user';           //Default groups new Users are added to
 $conf['superuser']   = '!!not set!!';    //The admin can be user or @group or comma separated list user1,@group1,user2
 $conf['manager']     = '!!not set!!';    //The manager can be user or @group or comma separated list user1,@group1,user2
@@ -69,7 +69,7 @@ $conf['remoteuser']  = '!!not set!!';    //user/groups that have access to remot
 
 /* Antispam Features */
 $conf['usewordblock']= 1;                //block spam based on words? 0|1
-$conf['relnofollow'] = 1;                //use rel="nofollow" for external links?
+$conf['relnofollow'] = 1;                //use rel="ugc nofollow" for external links?
 $conf['indexdelay']  = 60*60*24*5;       //allow indexing after this time (seconds) default is 5 days
 $conf['mailguard']   = 'hex';            //obfuscate email addresses against spam harvesters?
                                          //valid entries are:
@@ -136,6 +136,7 @@ $conf['rss_media']   = 'both';           //what should be listed?
                                          //  'media'    - media changes only
 $conf['rss_update'] = 5*60;              //Update the RSS feed every n seconds (defaults to 5 minutes)
 $conf['rss_show_summary'] = 1;           //Add revision summary to title? 0|1
+$conf['rss_show_deleted'] = 1;           //Show deleted items 0|1
 
 /* Advanced Settings */
 $conf['updatecheck'] = 1;                //automatically check for new releases?
@@ -158,6 +159,12 @@ $conf['renderer_xhtml'] = 'xhtml';       //renderer to use for main page generat
 $conf['readdircache'] = 0;               //time cache in second for the readdir operation, 0 to deactivate.
 $conf['search_nslimit'] = 0;             //limit the search to the current X namespaces
 $conf['search_fragment'] = 'exact';      //specify the default fragment search behavior
+$conf['trustedproxy'] = '^(::1|[fF][eE]80:|127\.|10\.|192\.168\.|172\.((1[6-9])|(2[0-9])|(3[0-1]))\.)';
+                                         //Regexp of trusted proxy address when reading IP using HTTP header
+                                         //  if blank, do not trust any proxy (including local IP)
+
+/* Feature Flags */
+$conf['defer_js'] = 1;                   // Defer javascript to be executed after the page's HTML has been parsed. Setting will be removed in the next release.
 
 /* Network Settings */
 $conf['dnslookups'] = 1;                 //disable to disallow IP to hostname lookups
